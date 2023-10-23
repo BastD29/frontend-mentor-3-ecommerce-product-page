@@ -1,0 +1,39 @@
+@use "@style/variables" as variables;
+
+.product-price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+
+  span {
+    color: map-get($map: variables.$red, $key: "1");
+    font-family: Kumbh Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 6px;
+    background: #ffeee2;
+    padding: 0.25rem 0.5rem;
+  }
+
+  h4 {
+    color: map-get($map: variables.$gray, $key: "1");
+    font-family: Kumbh Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.625rem;
+    text-decoration-line: strikethrough;
+  }
+
+  &__discount {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
